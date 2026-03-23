@@ -1,0 +1,116 @@
+:root {
+    --bg: #0d0d0f;
+    --panel: #17171b;
+    --panel-soft: #201317;
+    --line: #34242a;
+    --red: #d7263d;
+    --red-soft: #ffeaee;
+    --text: #f5f5f5;
+    --muted: #b6b6bd;
+}
+
+body {
+    background: linear-gradient(180deg, #09090b 0%, var(--bg) 100%);
+    color: var(--text);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cinema-hero {
+    background:
+        linear-gradient(90deg, rgba(215, 38, 61, 0.12), transparent 40%),
+        linear-gradient(180deg, #111114 0%, #0d0d0f 100%);
+    border-bottom: 1px solid #24181c;
+}
+
+.eyebrow {
+    color: #ff8c99;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.35rem;
+    font-weight: 700;
+    margin: 0.55rem 0 0.8rem;
+}
+
+.hero-copy {
+    max-width: 680px;
+    color: var(--muted);
+}
+
+.app-card, .table-card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+}
+
+.accent-card {
+    background: linear-gradient(180deg, #1c1115 0%, var(--panel) 100%);
+}
+
+.card-body {
+    padding: 1.4rem;
+}
+
+.card h5, .section-head h2 {
+    color: #fff;
+    font-weight: 700;
+}
+
+.section-head p {
+    color: var(--muted);
+}
+
+.form-control, .form-select {
+    min-height: 48px;
+    border-radius: 14px;
+    border: 1px solid #40262d;
+    background: #121216;
+    color: #fff;
+    box-shadow: none;
+}
+
+.form-control::placeholder {
+    color: #9f9fa9;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #ad3646;
+    box-shadow: 0 0 0 0.2rem rgba(215, 38, 61, 0.14);
+    background: #121216;
+    color: #fff;
+}
+
+.btn {
+    min-height: 46px;
+    border-radius: 14px;
+    font-weight: 700;
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, #d7263d, #a7192f);
+    border: none;
+}
+
+.btn-outline-light {
+    border-color: #5f5f6d;
+    color: #f3f3f7;
+}
+
+.table {
+    color: #f3f3f6;
+    margin-bottom: 0;
+}
+
+.table thead th {
+    background: #1f1116;
+    color: #ffb5bf;
+    border-color: #39242c;
+}
+
+.table td, .table th {
+    border-color: #2d2d34;
+}

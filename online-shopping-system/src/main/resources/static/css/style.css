@@ -1,0 +1,135 @@
+body {
+    background: #ffffff;
+    color: #111111;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.topbar {
+    border-bottom: 1px solid #e6e6e6;
+    background: #fff;
+}
+
+.topbar-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+    padding: 1.75rem 0;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #646464;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0.35rem 0 0;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+}
+
+.grid-layout.two-column {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.panel-box, .table-shell {
+    border: 1px solid #1b1b1b;
+    border-radius: 22px;
+    padding: 1.35rem;
+    background: #fff;
+}
+
+.accent-panel {
+    background: #111111;
+    color: #ffffff;
+}
+
+.accent-panel .form-control,
+.accent-panel .form-select {
+    background: #181818;
+    color: #fff;
+    border-color: #343434;
+}
+
+.accent-panel .form-control::placeholder {
+    color: #b0b0b0;
+}
+
+.panel-box h5, .section-head h2 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.section-head {
+    margin: 2rem 0 1rem;
+}
+
+.section-head p {
+    color: #666;
+    margin: 0.2rem 0 0;
+}
+
+.alert-box {
+    border-radius: 16px;
+}
+
+.form-control, .form-select {
+    min-height: 48px;
+    border-radius: 14px;
+    border: 1px solid #d7d7d7;
+    box-shadow: none;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #111;
+    box-shadow: 0 0 0 0.2rem rgba(17,17,17,0.08);
+}
+
+.btn {
+    min-height: 46px;
+    border-radius: 14px;
+    font-weight: 700;
+}
+
+.order-panel {
+    margin-top: 2rem;
+}
+
+.price-preview {
+    border: 1px solid #343434;
+    border-radius: 14px;
+    padding: 0.9rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    background: #181818;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table thead th {
+    background: #f3f3f3;
+    color: #111;
+}
+
+@media (max-width: 992px) {
+    .grid-layout {
+        grid-template-columns: 1fr;
+    }
+    .topbar-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

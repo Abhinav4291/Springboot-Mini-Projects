@@ -1,0 +1,67 @@
+:root {
+    --app-bg: #140f22;
+    --card-bg: rgba(221, 210, 245, 0.92);
+    --card-border: rgba(177, 152, 236, 0.20);
+    --surface: rgba(214, 201, 241, 0.98);
+    --text-main: #261a3d;
+    --text-muted: #5e4f80;
+    --accent: #8f63ff;
+    --accent-alt: #d18bff;
+    --success: #7b57d1;
+}
+
+body {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at 15% 85%, rgba(224, 84, 156, 0.24), transparent 24%),
+        radial-gradient(circle at 50% 82%, rgba(161, 72, 255, 0.26), transparent 26%),
+        radial-gradient(circle at 82% 80%, rgba(98, 88, 255, 0.26), transparent 24%),
+        linear-gradient(180deg, #181222 0%, var(--app-bg) 100%);
+    color: var(--text-main);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container { max-width: 1180px; }
+h1 { font-size: 2.1rem; font-weight: 700; margin-bottom: 1.5rem !important; color: #f5eeff; }
+.card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 18px; box-shadow: 0 24px 50px rgba(8, 4, 20, 0.34); overflow: hidden; backdrop-filter: blur(10px); }
+.card::before { content: ""; display: block; height: 4px; background: linear-gradient(90deg, var(--accent), var(--accent-alt)); }
+.card-body { padding: 1.35rem; }
+.card h5 { font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main); }
+.form-control, .form-select {
+    min-height: 46px;
+    border-radius: 12px;
+    border: 1px solid #bcaee5;
+    background: var(--surface);
+    color: var(--text-main);
+    box-shadow: none;
+}
+.form-control::placeholder { color: #776992; }
+.form-control:focus, .form-select:focus {
+    border-color: #8f79d8;
+    box-shadow: 0 0 0 0.2rem rgba(122, 99, 199, 0.14);
+    background: var(--surface);
+    color: var(--text-main);
+}
+.btn { min-height: 44px; border-radius: 12px; font-weight: 600; }
+.btn-primary { background: linear-gradient(135deg, #8b64ff, #6f4bd2); border: none; }
+.btn-success { background: linear-gradient(135deg, #ad7fff, var(--success)); border: none; }
+.btn-outline-secondary {
+    color: #53398f;
+    border-color: #9b80ea;
+    background: transparent;
+}
+.table {
+    margin-bottom: 0;
+    vertical-align: middle;
+    color: var(--text-main);
+    --bs-table-bg: var(--surface);
+    --bs-table-striped-bg: #d2c6ed;
+    --bs-table-hover-bg: #cdc0ea;
+}
+.table thead th {
+    background: #c8b8ef;
+    color: #47356f;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.table-bordered > :not(caption) > * > * { border-color: #b9a9e1; }

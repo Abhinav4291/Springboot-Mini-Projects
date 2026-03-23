@@ -1,0 +1,126 @@
+:root {
+    --blue: #1e5eff;
+    --blue-dark: #143a9c;
+    --yellow: #ffc928;
+    --yellow-soft: #fff6cf;
+    --bg: #f4f8ff;
+    --ink: #1b2950;
+    --muted: #627097;
+    --line: #d7e2ff;
+}
+
+body {
+    background: linear-gradient(180deg, #fafdff 0%, var(--bg) 100%);
+    color: var(--ink);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.top-banner {
+    background: linear-gradient(120deg, #1b57eb 0%, #2c79ff 60%, #ffd54a 60%, #ffd54a 100%);
+    color: #fff;
+}
+
+.banner-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin: 0.5rem 0 0.8rem;
+}
+
+.hero-copy {
+    max-width: 700px;
+    opacity: 0.94;
+}
+
+.mini-panels {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.mini-box {
+    min-width: 110px;
+    border-radius: 18px;
+    padding: 1rem 1.1rem;
+    background: rgba(255,255,255,0.16);
+    backdrop-filter: blur(8px);
+}
+
+.mini-box span {
+    display: block;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+}
+
+.mini-box strong {
+    font-size: 1.45rem;
+}
+
+.app-card, .table-card {
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    box-shadow: 0 18px 36px rgba(30, 94, 255, 0.08);
+}
+
+.accent-card {
+    background: linear-gradient(180deg, #ffffff 0%, #fffef0 100%);
+}
+
+.card-body { padding: 1.4rem; }
+.card h5 { font-weight: 700; margin-bottom: 1rem; }
+.section-head h2 { font-size: 1.3rem; font-weight: 700; }
+.section-head p { color: var(--muted); margin-top: 0.25rem; }
+
+.form-control, .form-select {
+    min-height: 48px;
+    border-radius: 14px;
+    border: 1px solid #d6e2ff;
+    box-shadow: none;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #8bb0ff;
+    box-shadow: 0 0 0 0.2rem rgba(30, 94, 255, 0.12);
+}
+
+.btn {
+    min-height: 46px;
+    border-radius: 14px;
+    font-weight: 700;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+    border: none;
+}
+
+.btn-warning {
+    background: linear-gradient(135deg, #ffd54a, var(--yellow));
+    border: none;
+    color: #4d3a00;
+}
+
+.table thead th {
+    background: var(--yellow-soft);
+    color: #655000;
+}
+
+@media (max-width: 768px) {
+    .banner-grid {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    h1 { font-size: 1.9rem; }
+}
