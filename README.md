@@ -1,6 +1,6 @@
 # Spring Boot Mini Projects
 
-This repository contains a collection of 8 mini projects developed during my Spring Boot training. Each project demonstrates core backend development concepts using Spring Boot and related technologies.
+This repository contains a collection of 9 mini projects developed during my Spring Boot training. Each project demonstrates core backend development concepts using Spring Boot and related technologies.
 
 ## Tech Stack
 
@@ -22,14 +22,15 @@ Each project is a standalone Maven application with basic CRUD operations and si
 
 ## Projects Included
 
-- Library Management System  
-- Hospital Management System  
-- Online Shopping System  
-- College Management System  
-- Movie Booking System  
+- Art Attack (Art Gallery Project)  
 - Banking System  
-- Food Delivery System  
+- College Management System  
 - Employee Leave Management System  
+- Food Delivery System  
+- Hospital Management System  
+- Library Management System  
+- Movie Booking System  
+- Online Shopping System  
 
 ## Setup Instructions
 
