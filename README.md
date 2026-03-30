@@ -21,8 +21,7 @@ Each project is a standalone Maven application with basic CRUD operations and si
 - Layered architecture (Controller, Service, Repository)  
 
 ## Projects Included
-
-- Art Attack (Art Gallery Project)  
+  
 - Banking System  
 - College Management System  
 - Employee Leave Management System  
